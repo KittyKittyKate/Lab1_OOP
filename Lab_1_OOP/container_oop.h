@@ -7,8 +7,8 @@ namespace collection_of_wisdom_oop {// Простейший контейнер на основе одномерног
 		int length; // текущая длина
 		wisdom *cont[max_len];
 	public:
-		void In(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
+		void In(ifstream &ifst); // ввод содержимого контейнера
+		void Out(ofstream &ofst); // вывод содержимого контейнера
 		void Clear(); // очистка контейнера от мудрости
 		container(); // инициализация контейнера
 		~container() { Clear(); } // утилизация контейнера

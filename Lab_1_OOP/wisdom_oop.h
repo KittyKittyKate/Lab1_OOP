@@ -9,7 +9,7 @@ namespace collection_of_wisdom_oop {
 	class wisdom {
 	public:
 		// иденитфикация, порождение и ввод фигуры из пото-ка
-		static wisdom* In(ifstream &ifst);
+		static wisdom* In(ifstream &ifst);//не привязан к какому-либо объекту класса
 		virtual void InData(ifstream &ifst) = 0; // ввод
 		virtual void Out(ofstream &ofst) = 0; // вывод
 	};

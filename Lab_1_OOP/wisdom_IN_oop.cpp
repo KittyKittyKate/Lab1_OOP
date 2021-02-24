@@ -3,10 +3,11 @@
 // геометрических фигурах
 #include "aphorism_oop.h"
 #include "proverb_oop.h"
+#include "puzzle_oop.h"
 using namespace std;
 namespace collection_of_wisdom_oop {
 	// Ввод параметров обобщенной фигуры
-	wisdom* wisdom::In(ifstream &ifst) {
+	wisdom* wisdom::In(ifstream &ifst) {// здесь "рожается ребенок" - или афоризм, или пословица
 		wisdom *sp;
 		int k;
 		ifst >> k;
@@ -16,6 +17,9 @@ namespace collection_of_wisdom_oop {
 			break;
 		case 2:
 			sp = new proverb;
+			break;
+		case 3:
+			sp = new puzzle;
 			break;
 		default:
 			return 0;
